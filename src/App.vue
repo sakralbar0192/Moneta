@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from 'components/HelloWorld.vue'
+import TransactionList from 'components/TransactionList.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <TransactionList />
 </template>

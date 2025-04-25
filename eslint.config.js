@@ -25,7 +25,18 @@ export default typescriptEslint.config(
     plugins: {
       '@stylistic/js': stylisticTs
     },
-    rules: {},
+    rules: {
+      "vue/multi-word-component-names": ["error", {
+        "ignores": [
+          "Column",
+          "Row",
+          "Button"
+        ]
+      }],
+      "vue/no-reserved-component-names": ["error", {
+        "htmlElementCaseSensitive": true,
+      }]
+    },
   },
   eslintConfigPrettier,
 );

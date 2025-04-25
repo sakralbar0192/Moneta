@@ -1,7 +1,7 @@
 /// <reference types="@vitest/browser/context" />
 import { render, screen } from '@testing-library/vue';
 import TransactionList from 'components/TransactionList.vue';
-import { useTransactionStore } from '../useTransactionStore';
+import { useTransactionStore } from '../../stores/useTransactionStore';
 import { createPinia } from 'pinia';
 import { describe, expect, it } from 'vitest';
 

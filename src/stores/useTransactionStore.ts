@@ -9,7 +9,7 @@ export interface Transaction {
 }
 
 export const useTransactionStore = defineStore('transactions',() => {
-  const transactions: Ref<Transaction[]> = ref([]);
+  const transactions: Ref<Transaction[]> = ref([{ id: 1, amount: 100, category: 'food', type: 'expense' }]);
   const addTransaction = (transaction: Transaction) => transactions.value.push(transaction)
 
   return { transactions, addTransaction }
